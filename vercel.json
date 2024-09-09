@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
+  ],
+  "env": {
+    "FIREBASE_API_KEY": "AIzaSyAqba9G92tmCnRnEf_ZQMOsGet0TxHl72w",
+    "FIREBASE_AUTH_DOMAIN": "all-sensors-readings.firebaseapp.com",
+    "FIREBASE_DATABASE_URL": "https://all-sensors-readings-default-rtdb.firebaseio.com",
+    "FIREBASE_PROJECT_ID": "all-sensors-readings",
+    "FIREBASE_STORAGE_BUCKET": "all-sensors-readings.appspot.com",
+    "FIREBASE_MESSAGING_SENDER_ID": "1032126443988",
+    "FIREBASE_APP_ID": "1:1032126443988:web:bc32fb7ec13f1086a46641",
+    "FIREBASE_MEASUREMENT_ID": "G-JYKPCQG9FV",
+    "WEB3_INFURA_PROJECT_ID": "bf952bda60a746a3a98d47f839265cc4",
+    "SMART_CONTRACT_ADDRESS": "0xffd65e60ca86c3171e1f1331ed4d539c988812f2",
+    "SMART_CONTRACT_ABI": "[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_temperatureThreshold\",\"type\":\"uint256\"}, { ... your ABI definition here ...}]"
+  }
+}
